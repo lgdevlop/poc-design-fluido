@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  /* font-size: calc(14px + (22 - 14) * ((100vw - 280px) / (1260 - 280))); */
+  --fnt-tamanho-minimo-px: 14px;
+  --fnt-tamanho-maximo: 22;
+  --fnt-tamanho-minimo: 14;
+  --vw-tamanho-minimo-px: 280px;
+  --vw-tamanho-maximo: 1259;
+  --vw-tamanho-minimo: 280;
+  font-size: calc(
+    var(--fnt-tamanho-minimo-px) +
+      (var(--fnt-tamanho-maximo) - var(--fnt-tamanho-minimo)) *
+      (
+        (100vw - var(--vw-tamanho-minimo-px)) /
+          (var(--vw-tamanho-maximo) - var(--vw-tamanho-minimo))
+      )
+  );
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1.18vw;
+  /* margin-left: 1.18vw;
+  margin-right: 1.18vw; */
+  /* grid-auto-flow: dense; */
+  box-sizing: border-box;
+}
+
+.container-input-text-icon {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: auto;
+  /* margin-left: 40px; */
+  /* margin-left: 1.18vw; */
+  /* margin-right: 40px; */
+  /* margin-right: 1.18vw; */
+  box-sizing: border-box;
+}
+.container-input-text-icon i {
+  color: rgba(243, 128, 14, 1);
+  font-size: 1.1rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 2;
+  align-self: center;
+  /* padding-left: 8px; */
+  padding-left: 38%;
+}
+.container-input-text-icon input {
+  margin: 0;
+  padding-left: 2rem;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  border: 2px solid dodgerBlue;
+  border-radius: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.container-input-text-icon input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.fnt-style {
+  font-family: "Roboto";
+  /* font-size: 16px; */
+  /* font-size: calc(16px + 0.4vw); */
+  /* font-size: calc(14px + (22 - 14) * ((100vw - 280px) / (1260 - 280))); */
+  /* font-size: calc(var(--fnt-tamanho-minimo-px) + (var(--fnt-tamanho-maximo) - var(--fnt-tamanho-minimo)) * ((100vw - var(--vw-tamanho-minimo-px)) / (var(--vw-tamanho-maximo) - var(--vw-tamanho-minimo)))); */
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(48, 17, 228, 0.9);
+}

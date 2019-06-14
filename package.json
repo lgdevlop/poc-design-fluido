@@ -1,0 +1,13 @@
+{
+  "name": "poc-design-fluido",
+  "version": "1.0.0",
+  "author": "Leonardo Gomes <lgdevlop@gmail.com>",
+  "description": "Design fluído com Grid CSS",
+  "repository": "git@github.com:lgdevlop/star-wars-game.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MPL-2.0"
+}
