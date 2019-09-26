@@ -72,7 +72,6 @@
   /* font-size: 16px; */
   /* font-size: calc(16px + 0.4vw); */
   /* font-size: calc(14px + (22 - 14) * ((100vw - 280px) / (1260 - 280))); */
-  /* font-size: calc(var(--fnt-tamanho-minimo-px) + (var(--fnt-tamanho-maximo) - var(--fnt-tamanho-minimo)) * ((100vw - var(--vw-tamanho-minimo-px)) / (var(--vw-tamanho-maximo) - var(--vw-tamanho-minimo)))); */
   font-size: 1rem;
   font-weight: normal;
   color: rgba(48, 17, 228, 0.9);
